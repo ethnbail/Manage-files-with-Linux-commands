@@ -1,12 +1,12 @@
 
-#🛡️ Creating a Honeypot using Pentbox on Kali Linux (VMware)
-📌 Honeypot
+**🛡️ Creating a Honeypot using Pentbox on Kali Linux (VMware)**
+**📌 Honeypot**
 Simulating a Network Honeypot to Detect Unauthorized Access
 
-🎯 Objective
+**🎯 Objective**
 The goal of this project is to set up a honeypot using Pentbox on a Kali Linux virtual machine to simulate a web server and observe how unauthorized connection attempts are logged. This serves as a basic example of cybersecurity threat detection and monitoring.
 
-🧰 Materials & Tools
+**🧰 Materials & Tools**
 VMware Workstation Pro
 
 Kali Linux 2024.4 ISO
@@ -17,13 +17,13 @@ Host Computer (Windows/macOS)
 
 Internet Browser (for simulating access attempts)
 
-🧪 Procedure
-1. Creating the Virtual Machine
+**🧪 Procedure**
+**1. Creating the Virtual Machine**
 I used VMware Workstation Pro to create a new virtual machine.
 
 Installed Kali Linux 2024.4 as the guest operating system.
 
-#2. Installing Pentbox
+**2. Installing Pentbox**
 
 Opened the terminal inside Kali Linux.
 
@@ -43,7 +43,7 @@ mv pentbox-1.8/* pentbox/
 
 cd pentbox
 
-#3. Running Pentbox
+**3. Running Pentbox**
    
 Started the tool by running:
 
@@ -61,7 +61,7 @@ Honeypot activated on port 80.
 ![image](https://github.com/user-attachments/assets/9a6df9f0-69b6-430a-9939-62ef2e6b76bd)
 
 
-#4. Simulating an Intrusion Attempt
+**4. Simulating an Intrusion Attempt**
 On my host machine (outside the virtual machine), I opened a browser.
 
 Typed the IP address of the virtual machine in the URL bar:
@@ -76,7 +76,7 @@ Browser shows an "Access Denied" message.
 ![image](https://github.com/user-attachments/assets/65ddbeb9-aa9f-48e1-ab30-16ec51b40c77)
 
 
-#5. Logging and Detection
+**5. Logging and Detection**
 Back on the Kali Linux VM terminal, Pentbox detected the attempt.
 
 It logged information such as:
@@ -93,5 +93,5 @@ Pentbox logs the intrusion attempt with detailed request info.
 ![image](https://github.com/user-attachments/assets/38c88f92-8961-46db-9ab0-8f6b698764ac)
 
 
-#📝 Summary
+**📝 Summary**
 This project demonstrates how to set up a basic honeypot using Pentbox v1.8 in a Kali Linux virtual machine. The honeypot listens on port 80 and logs unauthorized HTTP requests as potential intrusion attempts. This setup provides a simple, controlled environment for understanding how attackers probe network services and how such activities can be monitored. While not a production-grade security solution, it's a great introduction to cybersecurity monitoring, network awareness, and the concept of trap-based defense mechanisms.
